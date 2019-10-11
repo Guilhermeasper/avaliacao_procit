@@ -1,0 +1,64 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune avaliacao_procit-master@1.0.0
+21 silly loadIdealTree Finishing
+22 silly currentTree avaliacao_procit-master@1.0.0
+23 silly idealTree avaliacao_procit-master@1.0.0
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 0
+28 silly decomposeActions action count 0
+29 silly executeActions Starting
+30 silly install executeActions
+31 silly doSerial global-install 0
+32 silly doParallel fetch 0
+33 warn locking Error: EACCES: permission denied, open '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock'
+33 warn locking  /home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock failed { Error: EACCES: permission denied, open '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock'
+33 warn locking   errno: -13,
+33 warn locking   code: 'EACCES',
+33 warn locking   syscall: 'open',
+33 warn locking   path: '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock' }
+34 silly rollbackFailedOptional Starting
+35 silly rollbackFailedOptional Finishing
+36 silly runTopLevelLifecycles Starting
+37 silly runTopLevelLifecycles Finishing
+38 silly install printInstalled
+39 warn avaliacao_procit-master@1.0.0 No description
+40 warn avaliacao_procit-master@1.0.0 No repository field.
+41 verbose stack Error: EACCES: permission denied, open '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock'
+42 verbose cwd /home/guilherme/Downloads/avaliacao_procit-master
+43 error Linux 4.15.0-65-generic
+44 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+45 error node v8.10.0
+46 error npm  v3.5.2
+47 error path /home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock
+48 error code EACCES
+49 error errno -13
+50 error syscall open
+51 error Error: EACCES: permission denied, open '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock'
+51 error  { Error: EACCES: permission denied, open '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock'
+51 error   errno: -13,
+51 error   code: 'EACCES',
+51 error   syscall: 'open',
+51 error   path: '/home/guilherme/.npm/_locks/staging-9d7c2c3beacdc381.lock' }
+52 error Please try running this command again as root/Administrator.
+53 verbose exit [ -13, true ]

@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="entry">
+            <form method="post" action="/" onsubmit="setTimeout(function(){window.location.reload();},10)">
+                <div class="form-field">
+                    <label for="message"></label>
+                    <textarea class="input" id="message" name="message" rows="4" autofocus></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn" type="submit">Enviar</button>
+                </div>
+            </form>
+
+        </div>
+        <div id="tweets">
+            <% if (arr && arr.length) { %>
+            <ul>
+                <% arr.forEach((item) => { %>
+                <li><h3><%= item.content %></h3>
+                    <label><%= moment(item.posting_date).format( 'DD/MM/YYYY') %></label>
+                    <label><%= item.posting_time %></label></li>
+                <% }) %>
+            </ul>
+            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>
